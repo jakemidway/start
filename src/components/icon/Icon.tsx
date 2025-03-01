@@ -1,17 +1,16 @@
-import iconsSprite from '../../assets/img/icons-sprite.svg';
+import iconSprite from './icon-sprites.svg'
 
-type IconPropsType = {
-    iconId: string;
+type TypeIconSprites = {
+    width?: string
+    height?: string
+    viewBox?: string
+    iconId?: string
 }
 
-
-export const Icon = (props: IconPropsType) => {
+export const Icon = (props: TypeIconSprites) => {
     return (
-
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlinkHref={`${iconsSprite}#${props.iconId}`}></use>
+        <svg width={props.width || "52"} height={props.height || "50"} viewBox={props.viewBox || "0 0 52 50"} fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`${iconSprite}#${props.iconId}`}/>
         </svg>
-
     );
 };
-

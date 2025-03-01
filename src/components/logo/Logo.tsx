@@ -1,11 +1,12 @@
-import {Icon} from "../icon/Icon.tsx";
-
 
 export const Logo = () => {
     return (
+
         <a href='#'>
-            <Icon iconId={'Linkedin'}/>
+            <h2>hea<span>d</span>er</h2>
         </a>
     );
 };
+
+
 
