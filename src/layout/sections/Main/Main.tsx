@@ -1,13 +1,17 @@
 import styled from "styled-components";
+import photo from "./../../../assets/img/i22.jpg"
+import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 export const Main = () => {
     return (
         <div>
-            <div>
-                <span>I'm Medvetskiy Evgeny</span>
-                <h1>Web-developer, The Creator</h1>
-            </div>
-            <Photo src="./../../../assets/img/i22.jpg"/>
+            <FlexWrapper justify="space-around">
+                <div>
+                    <span>I'm Medvetskiy Evgeny</span>
+                    <h1>Web-developer, The Creator</h1>
+                </div>
+                <Photo src={photo}/>
+            </FlexWrapper>
         </div>
     );
 };
