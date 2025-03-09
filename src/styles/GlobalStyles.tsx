@@ -11,8 +11,18 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${theme.colors.grey.dark};
+        //background-color: ${theme.colors.grey.dark};
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
+    
+    li{
+        list-style: none;
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    
 `

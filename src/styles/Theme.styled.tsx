@@ -1,5 +1,7 @@
 export const theme = {
     colors: {
+        bglight: "#ffffff",
+        bgdark: "#EDF7FA",
         primary: "gold",
         secondary: "pink",
         grey:{
