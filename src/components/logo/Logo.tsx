@@ -1,15 +1,19 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.styled.tsx";
 
 export const Logo = () => {
     return (
 
-        <a href='#'>
+        <LinkLogo href='#'>
             <h2>&#60;head<GoldWord>e</GoldWord>r&#62;</h2>
-        </a>
+        </LinkLogo>
     );
 };
 
+const LinkLogo = styled.a`
+    color: ${theme.colors.font};
+`
 
 const GoldWord = styled.span`
-    color: gold;
+    color: ${theme.colors.primary};
 `
