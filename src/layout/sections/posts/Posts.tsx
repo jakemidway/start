@@ -1,7 +1,8 @@
-import {theme} from "../../styles/Theme.styled.tsx";
+import {theme} from "../../../styles/Theme.styled.tsx";
 import styled from "styled-components";
-import {Container} from "../../components/Container.tsx";
+import {Container} from "../../../components/Container.tsx";
 import {Post} from "./Post.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.tsx";
 
 export const Posts = () => {
     return (
@@ -9,7 +10,8 @@ export const Posts = () => {
             <Container>
                 <PostsContns>
                     <PostTitle>
-                        <h2>Recent posts</h2>
+                        <SectionTitle title="Recent posts"/>
+
                         <a href="#">View all</a>
                     </PostTitle>
 
@@ -30,7 +32,7 @@ export const Posts = () => {
 };
 
 const StyledPosts = styled.div`
-    background-color: ${theme.colors.bgdark};
+    background-color: ${theme.colors.dark};
 `
 
 const PostsContns = styled.div`
@@ -47,6 +49,9 @@ const PostTitle = styled.div`
 const PostList = styled.ul`
     display: flex;
     gap: 20px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
 

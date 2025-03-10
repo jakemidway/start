@@ -12,8 +12,13 @@ export const Logo = () => {
 
 const LinkLogo = styled.a`
     color: ${theme.colors.font};
+    h2{
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
 `
 
 const GoldWord = styled.span`
-    color: ${theme.colors.primary};
+    color: ${theme.colors.accent};
 `

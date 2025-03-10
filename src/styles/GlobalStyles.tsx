@@ -11,10 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        //background-color: ${theme.colors.grey.dark};
+        background-color: ${theme.colors.dark};
         margin: 0;
-        font-family: "heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: "rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: ${theme.colors.font};
+        font-size: 16px;
     }
     
     ul{
@@ -22,20 +23,36 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     a{
-        color: ${theme.colors.primary};
+        color: ${theme.colors.accent};
         text-decoration: none;
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
     }
     
     button{
         background-color: unset;
         border: none;
     }
-    
-    section:nth-of-type(odd){
-        background-color: ${theme.colors.bglight};
+    section{
+        padding: 32px 0;
     }
+    // section:nth-of-type(odd){
+    //     background-color: ${theme.colors.light};
+    // }
+    //
+    // section:nth-of-type(even){
+    //     background-color: ${theme.colors.dark};
+    // }
 
-    section:nth-of-type(even){
-        background-color: ${theme.colors.bgdark};
+    .text-accent{
+        color: ${theme.colors.accent};
     }
 `

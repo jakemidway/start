@@ -1,4 +1,4 @@
-import {theme} from "../../styles/Theme.styled.tsx";
+import {theme} from "../../../styles/Theme.styled.tsx";
 import styled from "styled-components";
 
 type TypePropsPost = {
@@ -23,7 +23,7 @@ export const Post = (props: TypePropsPost) => {
 
 const PostItem = styled.div`
     min-width: 384px;
-    background-color: ${theme.colors.bglight};
+    background-color: ${theme.colors.light};
     padding: 24px;
 
     & h3 {

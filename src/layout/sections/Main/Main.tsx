@@ -2,6 +2,8 @@ import styled from "styled-components";
 import photo from "./../../../assets/img/i22.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
+import {Button} from "../../../components/button/Button.tsx";
+
 
 export const Main = () => {
     return (
@@ -9,9 +11,9 @@ export const Main = () => {
             <StyledMain>
                 <FlexWrapper justify="space-between">
                     <About>
-                        <span>I'm Medvetskiy Evgeny</span>
-                        <h1>Web-developer, The Creator</h1>
-                        <button>Download Resume</button>
+                        <MainText>I'm <b>Medvetskiy Evgeny</b></MainText>
+                        <MainTitle>Web-developer, The Creator</MainTitle>
+                        <Button text={"Download Resume"}/>
                     </About>
                     <Photo src={photo}/>
                 </FlexWrapper>
@@ -22,13 +24,34 @@ export const Main = () => {
 
 const StyledMain = styled.div`
     min-height: 526px;
-    padding: 210px 0 70px;
+    padding: 168px 0 86px;
     
 `
 const About = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 `
+const MainText= styled.span`
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+`
+
+const MainTitle = styled.h1`
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 26px;
+`
+
 const Photo = styled.img`
-    width: 350px;
-    height: 350px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
 `
+

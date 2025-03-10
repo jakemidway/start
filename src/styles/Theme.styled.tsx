@@ -1,11 +1,13 @@
 export const theme = {
     colors: {
-        bglight: "#ffffff",
-        bgdark: "#EDF7FA",
-        primary: "#ff6464",
-        secondary: "#00a8cc",
-        font: "#21243D",
-        grey:{
+        light: "#ffffff",
+        dark: "#202437",
+        accent: "#ffc675",
+        accentSecondary: "#313552",
+        accentDark: "#1f2336",
+        accentDarkSecond: "#202437",
+        font: "#fff",
+        grey: {
             dark: "#939393",
             light: "#cec9c9"
         }

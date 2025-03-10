@@ -1,10 +1,34 @@
+import styled from "styled-components";
+import {theme} from "../../styles/Theme.styled.tsx";
 
-const Button = () => {
+type TypePropsButton = {
+    text: string;
+}
+
+export const Button = (props: TypePropsButton) => {
     return (
-        <div>
-
-        </div>
+        <StyledButton>
+            {props.text}
+        </StyledButton>
     );
 };
 
-export default Button;
+const StyledButton = styled.button`
+    border: 1px solid ${theme.colors.accent};
+    color: ${theme.colors.accent};
+    background: inherit;
+    padding: 0.7rem 1.4rem 0.6rem;
+    border-radius: 2px;
+    @include transition-time(1);
+
+    &:hover {
+        background-color: ${theme.colors.accent};
+        color: ${theme.colors.dark};
+    }
+
+    &:active {
+        border: 1px solid ${theme.colors.accent};
+        color: ${theme.colors.accent};
+        background: inherit;
+    }
+`
