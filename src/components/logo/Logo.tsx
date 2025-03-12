@@ -14,7 +14,7 @@ const LinkLogo = styled.a`
     color: ${theme.colors.font};
     h2{
         font-weight: 400;
-        font-size: 20px;
+        font-size: 26px;
         letter-spacing: 2px;
     }
 `

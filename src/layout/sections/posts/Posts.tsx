@@ -8,7 +8,7 @@ export const Posts = () => {
     return (
         <StyledPosts>
             <Container>
-                <PostsContns>
+
                     <PostTitle>
                         <SectionTitle title="Recent posts"/>
 
@@ -24,7 +24,7 @@ export const Posts = () => {
                               textPost={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
 
                     </PostList>
-                </PostsContns>
+
             </Container>
 
         </StyledPosts>
@@ -35,15 +35,12 @@ const StyledPosts = styled.div`
     background-color: ${theme.colors.dark};
 `
 
-const PostsContns = styled.div`
-    padding: 32px 0;
-`
+
 
 const PostTitle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 22px;
 `
 
 const PostList = styled.ul`

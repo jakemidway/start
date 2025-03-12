@@ -17,4 +17,5 @@ const StyleTitle = styled.h3`
     font-style: normal;
     font-weight: 400;
     line-height: 60px;
+    margin-bottom: 32px;
 `

@@ -12,10 +12,19 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: ${theme.colors.dark};
+        
         margin: 0;
         font-family: "rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: ${theme.colors.font};
-        font-size: 16px;
+        font-size: 22px;
+    }
+    
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 24px;
     }
     
     ul{
@@ -43,16 +52,5 @@ export const GlobalStyle = createGlobalStyle`
     }
     section{
         padding: 32px 0;
-    }
-    // section:nth-of-type(odd){
-    //     background-color: ${theme.colors.light};
-    // }
-    //
-    // section:nth-of-type(even){
-    //     background-color: ${theme.colors.dark};
-    // }
-
-    .text-accent{
-        color: ${theme.colors.accent};
     }
 `
