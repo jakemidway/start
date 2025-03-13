@@ -11,9 +11,8 @@ export const SectionTitle = (props: TypeSectionTitle) => {
     )
 }
 
-const StyleTitle = styled.h3`
+const StyleTitle = styled.h2`
     color: ${theme.colors.font};
-    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 60px;

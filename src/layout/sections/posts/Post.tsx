@@ -25,9 +25,10 @@ const PostItem = styled.div`
     min-width: 384px;
     background-color: ${theme.colors.light};
     padding: 24px;
+    color: ${theme.colors.dark};
 
     & h3 {
-        margin-bottom: 22px;
+        margin-bottom: 26px;
     }
 
     & div {

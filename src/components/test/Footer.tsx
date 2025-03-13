@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "../icon/Icon.tsx";
-// import { FlexWrapper } from "../../components/FlexWrapper";
+
 
 export const Footer = () => {
     return (
@@ -28,6 +28,7 @@ export const Footer = () => {
                             <Icon height="21" width="21" viewBox="0 0 21 21" iconId="youtube" />
                         </SocialLink>
                     </SocialItem>
+
                 </SocialList>
                 <Copyright>© 2025 Sharapov Nikolay, All Rights Reserved.</Copyright>
             </div>
@@ -61,3 +62,5 @@ const SocialLink = styled.a`
 const Copyright = styled.small`
     
 `
+
+

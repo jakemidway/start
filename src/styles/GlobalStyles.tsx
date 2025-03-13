@@ -16,15 +16,15 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         font-family: "rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: ${theme.colors.font};
-        font-size: 22px;
+        font-size: 16px;
     }
     
     h1{
-        font-size: 28px;
+        font-size: 44px;
     }
     
     h2{
-        font-size: 24px;
+        font-size: 26px;
     }
     
     ul{
