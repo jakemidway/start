@@ -2,13 +2,17 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme.styled.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 import img from "./../img/proobrezkicrop.jpg"
+import img1 from "./../img/Smoothiecrop.jpg"
+import img2 from "./../img/bootcrop.jpg"
 
+let arrImgWork = [img, img1, img2]
 
 type TypeWorkItemProps = {
     titleWork: string;
     age: number;
     stack: string;
     descriptionWork: string;
+    imgWork: number;
 }
 
 
@@ -16,7 +20,7 @@ export const WorkItem = (props:TypeWorkItemProps) => {
     return (
         <WorkItemStyled>
             <FlexWrapper gap={"18px"}>
-                <ImgStyled src={img} alt="my work"/>
+                <ImgStyled src={arrImgWork[props.imgWork]} alt="my work"/>
 
                 <div>
                     <ItemTitle>{props.titleWork}</ItemTitle>
@@ -29,7 +33,7 @@ export const WorkItem = (props:TypeWorkItemProps) => {
 };
 
 const WorkItemStyled = styled.div`
-    padding-bottom: 15px;
+    padding-bottom: 28px;
     border-bottom: 1px ${theme.colors.accent} solid;
     margin-bottom: 28px;
 `

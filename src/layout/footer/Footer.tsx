@@ -11,26 +11,28 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'inst'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
+                            <Icon iconId={'github'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'lkdin'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
+                            <Icon iconId={'linkedin'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon iconId={'instagram'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
                             <Icon iconId={'facebook'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
                         </SocialLink>
-                        <SocialLink>
-                            <Icon iconId={'facebook'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"} fill={"red"}/>
-                        </SocialLink>
                     </SocialItem>
 
 
                 </SocialList>
-                <Copyright>dsfsf</Copyright>
+                <Copyright>Copyright ©2020 All rights reserved </Copyright>
             </FlexWrapper>
 
         </StyledFooter>
@@ -39,17 +41,18 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-
+    padding: 48px 0;
 `
 
 const Name = styled.span`
-
+    margin-bottom: 26px;
 `
 
 const SocialList = styled.ul`
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-bottom: 26px;
 `
 
 const SocialItem = styled.li`

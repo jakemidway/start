@@ -52,5 +52,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     section{
         padding: 32px 0 46px;
+        margin-bottom: 44px;
     }
 `
