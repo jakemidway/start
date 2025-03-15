@@ -4,8 +4,8 @@ export const theme = {
         dark: "#202437",
         accent: "#ffc675",
         accentSecondary: "#313552",
-        accentDark: "#1f2336",
-        accentDarkSecond: "#202437",
+        accentDark: "#202437",
+        accentDarkSecond: "#1f2336",
         font: "#fff",
         grey: {
             dark: "#939393",

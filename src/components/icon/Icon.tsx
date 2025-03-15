@@ -10,10 +10,10 @@ type TypeIconSprites = {
 
 export const Icon = (props: TypeIconSprites) => {
     return (
-        <svg width={props.width || "52"} height={props.height || "50"} viewBox={props.viewBox || "0 0 52 50"} fill={props.fill || "none"} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-            <g transform="translate(50%, 50%)" transform-origin="center">
+        <svg width={props.width || "52"} height={props.height || "50"} viewBox={props.viewBox || "0 0 52 50"} fill={props.fill || "#fff"} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+
                 <use xlinkHref={`${iconSprite}#${props.iconId}`}/>
-            </g>
+
 
         </svg>
     );

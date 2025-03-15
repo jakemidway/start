@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
@@ -7,25 +6,27 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction="column" align="center" >
+            <FlexWrapper direction="column" align="center">
                 <Name> Jake Midway</Name>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'inst'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"} />
+                            <Icon iconId={'inst'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'lkdin'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"} />
+                            <Icon iconId={'lkdin'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'facebook'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"} />
+                            <Icon iconId={'facebook'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"}/>
+                        </SocialLink>
+                        <SocialLink>
+                            <Icon iconId={'facebook'} width={"26px"} height={"26px"} viewBox={"0 0 26px 26px"} fill={"red"}/>
                         </SocialLink>
                     </SocialItem>
-
 
 
                 </SocialList>
