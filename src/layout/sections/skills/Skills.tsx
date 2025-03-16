@@ -2,7 +2,7 @@ import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {Skill} from "./skill/skill.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.tsx";
-import {theme} from "../../../styles/Theme.styled.tsx";
+
 import styled from "styled-components";
 
 
@@ -28,7 +28,7 @@ export const Skills = () => {
 };
 
 const SkillsStyled = styled.section`
-    background: ${theme.colors.accentDarkSecond};
+    background: transparent;
 `
 
 

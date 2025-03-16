@@ -7,7 +7,7 @@ import {WorkItem} from "./workItem/WorkItem.tsx";
 
 export const Work = () => {
     return (
-        <section>
+        <WorkStyled>
             <Container>
                 <SectionTitle title={"Featured works"}/>
                 <WorkList>
@@ -17,11 +17,15 @@ export const Work = () => {
                 </WorkList>
 
             </Container>
-        </section>
+        </WorkStyled>
     );
 };
 
-const WorkList = styled.section`
+const WorkStyled = styled.section`
+    
+`
+
+const WorkList = styled.div`
     margin-bottom: 44px;
 `
 
