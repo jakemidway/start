@@ -55,7 +55,7 @@ export const Contact = () => {
                             <input className="form__inpt" type="email" name="emailAddres" placeholder="Youre email adress"
                                    required/>
 
-                            <textarea className="form__inpt form__textarea" name="message" id="" rows="4"
+                            <textarea className="form__inpt form__textarea" name="message" id=""
                                       placeholder="Your project description" required></textarea>
 
                             <button className="form__btn" type="submit">GO</button>
@@ -90,6 +90,3 @@ const SocialLink = styled.a`
 
 `
 
-const Copyright = styled.p`
-
-`
