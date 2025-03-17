@@ -5,6 +5,7 @@ import {Skills} from "./layout/sections/skills/Skills.tsx";
 import {Work} from "./layout/sections/work/Work.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {Posts} from "./layout/sections/posts/Posts.tsx";
+import {Contact} from "./layout/sections/contact/Contact.tsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Skills />
             <Posts />
             <Work />
+            <Contact />
             <Footer />
 
         </div>

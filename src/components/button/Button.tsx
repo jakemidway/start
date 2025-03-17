@@ -17,7 +17,7 @@ const StyledButton = styled.button`
     border: 1px solid ${theme.colors.accent};
     color: ${theme.colors.accent};
     background: inherit;
-    padding: 0.7rem 1.4rem 0.6rem;
+    padding: 0.8rem 1.4rem 0.6rem;
     border-radius: 2px;
     @include transition-time(1);
 

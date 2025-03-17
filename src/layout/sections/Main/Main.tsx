@@ -63,5 +63,8 @@ const Photo = styled.div`
     top: -100px;
     right: -100px;
     z-index: -1;
+    @media screen and (max-width: 1481px) {
+    right: 0;
+}
 `
 

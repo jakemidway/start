@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         font-family: "rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: ${theme.colors.font};
-        font-size: 16px;
+        font-size: 20px;
     }
     
     h1{
